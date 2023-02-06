@@ -1,0 +1,45 @@
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(247, 247, 247);
+}
+
+a:hover{
+    color: gray;
+    transition: 0.5s;
+}
+
+ul{
+    font-weight: bold;
+}
+
+header{
+    padding: 2em 5em;
+}
+
+.navtwo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-left: 3em;
+    font-family: "Montserrat", "Sans-serif";
+}
+
+.navi{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+    gap: 3em;
+
+}
+
+.pad{
+    padding: 0.5em 3em 0.5em 0.2em;
+    background-color: #4ABBED;
+    border-radius: 70px;
+}
