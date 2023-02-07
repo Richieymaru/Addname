@@ -1,3 +1,10 @@
+import { useContext } from "react"
+import { AppContext } from "../App"
+
+
 export const About = () => {
-    return <div><h1>THIS IS THE About!</h1></div>
+
+    const {jhonasAnn} = useContext(AppContext);
+
+    return <div><h1>THIS IS THE About! {jhonasAnn} </h1></div>
 }
