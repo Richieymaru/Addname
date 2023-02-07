@@ -1,8 +1,11 @@
 import { useState } from "react";
 import classes from "./Changename.module.css";
+import { useContext } from "react"
+import { AppContext } from "../App";
 
-export const Changename = (props) => {
+export const Changename = () => {
     
+    const {setJhonasAnn} = useContext(AppContext);
     const [name, setName] = useState("");
     
     const handleSubmitForm = (event) => {
@@ -13,7 +16,7 @@ export const Changename = (props) => {
     return <div>
         <form className={classes.form} onSubmit={handleSubmitForm}>
             <input type="text" value={name} onChange={(event) => {setName(event.target.value)}}/>
-            <button className={classes.btn} onClick={() => {props.setJhonasAnn(name)}}>Change Name</button>
+            <button className={classes.btn} onClick={() => {setJhonasAnn(name)}}>Change Name</button>
         </form>
     </div>
 }
